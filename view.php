@@ -101,11 +101,11 @@ if (!$blocked) {
                 echo "Big problem!";
             } else {
                 echo $username;
-                echo $userid;
             }
             ?></h1>
             <?php
                 foreach ($dates as $day) {
+                    echo $day;
                     $query = $conn->prepare("SELECT * FROM `events` WHERE `user_id` = ? AND `due` LIKE ?;");
                     $query->bind_param("is", $uid, $d);
 
