@@ -41,12 +41,12 @@ if (!$blocked) {
     $tz_obj = new DateTimeZone($tz);
     $theDate = new DateTime("now", $tz_obj);
     $today = $theDate->format('m/d/o');
-    $tom = new DateTime(strtotime($today . ' + 1 day'));
+    $tom = new DateTime(strtotime('+1 day'));
     $tomorrow = $tom->format('m/d/o');
     $dates = Array($today, $tomorrow);
 
-    for ($day = 0; $day < 9; $day += 1) {
-        $theDay = new DateTime(strtotime($tomorrow . ' + ' . $day . ' days'));
+    for ($day = 2; $day < 11; $day += 1) {
+        $theDay = new DateTime(strtotime($tomorrow . '+' . $day . ' days'));
         $dayText = $theDay->format('m/d/o');
         $dates[] = $dayText;
     }
