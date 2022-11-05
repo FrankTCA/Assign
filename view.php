@@ -105,7 +105,6 @@ if (!$blocked) {
             ?></h1>
             <?php
                 foreach ($dates as $day) {
-                    echo $day;
                     $query = $conn->prepare("SELECT * FROM `events` WHERE `user_id` = ? AND `due` LIKE ?;");
                     $query->bind_param("is", $uid, $d);
 
@@ -127,7 +126,7 @@ if (!$blocked) {
                             }
                             $doneyet = true;
                         }
-                        echo "<div class=\"dateBox\"><span class=\"evtName\">" . $row['name'] . "</span>";
+                        echo "<div class=\"dateBox\"><span class=\"evtName\">" . $row['name'] . "</span><br>";
                         if (!is_null($row['description'])) {
                             if ($row['description'] != "") {
                                 echo "<span class=\"evtDesc\">" . $row['description'] . "</span>";
