@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In</title>
+    <script type="text/javascript" src="resources/jquery.min.js"></script>
+    <script type="text/javascript" src="resources/login.js"></script>
+    <link rel="stylesheet" href="resources/global.css">
+    <meta name="robots" content="noindex,nofollow">
+</head>
+<body>
+    <div class="container" id="login">
+      <h1 class="center">Welcome to Info Toast Assign!</h1>
+      <p class="center">Assign is a platform that allows you to assign tasks for yourself due at certain dates</p>
+      <p class="center">It includes a page which can be put on whatever display you frequent, from a physical monitor to your browser homepage</p>
+      <p class="center">If you haven't registered yet, please do so at <a href="register.html">https://infotoast.org/assign/register.html</a></p>
+      <hr>
+      <h3>Please log in below:</h3>
+      <form>
+        <span class="formInfo">Username: </span><input type="text" name="un" id="un" placeholer="Username..."><br>
+        <span class="formInfo">Password: </span><input type="password" name="pw" id="pw" placeholder="Password..."><br>
+        <button data-callback="onSubmit" data-action="submit" class="nullsubmitbtn" id="loginSubmitBtn">Log In</button>
+      </form>
+      <p id="status">You shouldn't see this!</p>
+    </div>
+</body>
+</html>
