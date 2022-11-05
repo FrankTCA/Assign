@@ -1,7 +1,6 @@
 <?php
 session_start();
-
-require 'creds.php';
+require './creds.php';
 
 if (!(isset($_POST['un']) && isset($_POST['pw']))) {
     die("Proper information not given!");

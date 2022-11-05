@@ -1,7 +1,6 @@
 <?php
 session_start();
-
-require 'creds.php';
+require './creds.php';
 
 if (!isset($_SESSION["assign_user_id"])) {
     die("Not logged in!");
