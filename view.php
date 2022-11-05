@@ -121,7 +121,7 @@ if (!$blocked) {
                             } else if ($day == $tomorrow) {
                                 echo "<span class=\"day\">TOMORROW</span><br>";
                             } else {
-                                $date2 = new DateTime(strtotime($day));
+                                $date2 = new DateTime($day);
                                 echo "<span class=\"day\">" . $date2->format('l, F j') . "</span><br>";
                             }
                             $doneyet = true;
