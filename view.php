@@ -29,7 +29,7 @@ if (!$blocked) {
     $username = null;
 
     while ($row = mysqli_fetch_assoc($result)) {
-        if ($row['approved'] == 0) {
+        if ($row['allowed'] == 0) {
             $blocked = true;
         } else {
             $userid = $row['id'];
