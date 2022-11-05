@@ -1,28 +1,5 @@
 $(document).ready(function() {
     $('#status').hide();
-    $('.nullsubmitbtn').prop('disabled', true);
-
-    $("#un").on("input", function() {
-        var value = $("#un").val();
-        if (value !== "" && $("#pw").val() !== "") {
-            $("#loginSubmitBtn").attr('nullsubmitbtn', 'submitbtn');
-            $("#loginSubmitBtn").prop('disabled', false);
-        } else {
-            $("#loginSubmitBtn").attr('submitbtn', 'nullsubmitbtn');
-            $("#loginSubmitBtn").prop('disabled', true);
-        }
-    });
-
-    $("#pw").on("input", function() {
-        var value = $("#pw").val();
-        if (value !== "" && $("#un").val() !== "") {
-            $("#loginSubmitBtn").attr('nullsubmitbtn', 'submitbtn');
-            $("#loginSubmitBtn").prop('disabled', false);
-        } else {
-            $("#loginSubmitBtn").attr('submitbtn', 'nullsubmitbtn');
-            $("#loginSubmitBtn").prop('disabled', true);
-        }
-    });
 
     $("#loginSubmitBtn").click(function() {
         var username = $("#un").val();

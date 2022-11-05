@@ -4,50 +4,7 @@ $(document).ready(function() {
     $('#unwarning').hide();
     $('#pwarning').hide();
     $('#cpwarning').hide();
-    $('.nullsubmitbtn').prop('disabled', true);
 
-    $('#un').on("input", function() {
-        var value = $('#un').val();
-        if (value.length > 8) {
-            $('#unwarning').show();
-            $('#registrationSubmitBtn').attr('submitbtn', 'nullsubmitbtn');
-            $('#registrationSubmitBtn').prop('disabled', true);
-        } else {
-            $('#unwarning').hide();
-            if ($("#pw").val() !== "" && $("#pw").val() === $("#cpw").val() && checkPasswordWithCommonPasswords($("#pw").val())) {
-                $("#registrationSubmitBtn").attr('nullsubmitbtn', 'submitbtn');
-                $("#registrationSubmitBtn").prop('disabled', false);
-            }
-        }
-    });
-    $('#pw').on("input", function() {
-        var value = $("#pw").val();
-        if (!checkPasswordWithCommonPasswords(value)) {
-            $('#pwarning').show();
-            $('#registrationSubmitBtn').attr('submitbtn', 'nullsubmitbtn');
-            $('#registrationSubmitBtn').prop('disabled', true);
-        } else {
-            $('#pwarning').hide();
-            if (value === $("cpw").val() && value !== "" && $('#un').val().length < 9) {
-                $("#registrationSubmitBtn").attr('nullsubmitbtn', 'submitbtn');
-                $("#registrationSubmitBtn").prop('disabled', false);
-            }
-        }
-    });
-    $("#cpw").on("input", function() {
-        var value = $("#cpw").val();
-        if (value !== $("#pw").val()) {
-            $('#cpwarning').show();
-            $('#registrationSubmitBtn').attr('submitbtn', 'nullsubmitbtn');
-            $('#registrationSubmitBtn').prop('disabled', true);
-        } else {
-            $("#cpwarning").hide();
-            if (checkPasswordWithCommonPasswords(value) && value !== "" && $("#un").val().length < 9) {
-                $("#registrationSubmitBtn").attr('nullsubmitbtn', 'submitbtn');
-                $("#registrationSubmitBtn").prop('disabled', false);
-            }
-        }
-    });
     $('#registrationSubmitBtn').click(function () {
         var username = $('#un').val();
         var pass = $('#pw').val();
