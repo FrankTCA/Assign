@@ -115,7 +115,6 @@ if (!$blocked) {
                     $doneyet = false;
                     while ($row = mysqli_fetch_assoc($result2)) {
                         if (!$doneyet) {
-                            echo "<hr>";
                             if ($day == $today) {
                                 echo "<span class=\"day\">TODAY</span><br>";
                             } else if ($day == $tomorrow) {
