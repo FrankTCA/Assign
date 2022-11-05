@@ -56,7 +56,7 @@ while ($row = mysqli_fetch_assoc($result)) {
         die("Account has not yet been approved!");
     } else {
         $_SESSION['assign_user_id'] = $row['id'];
-        $_SESSION['assign_user_name'] = $row['username'];
+        $_SESSION['assign_user_name'] = $row['name'];
         die("success");
     }
 }
