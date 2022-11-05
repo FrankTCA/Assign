@@ -32,14 +32,14 @@ hr {
 }
 
 .nullsubmitbtn {
-    background-color: #7FD383;
+    background-color: #4CAF50;
     color: white;
     padding: 16px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
-    opacity: 0.6;
+    opacity: 0.9;
 }
 
 .submitbtn {
