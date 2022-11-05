@@ -113,7 +113,7 @@ if (!$blocked) {
                     $stmt->execute();
                     $result2 = $stmt->get_result();
                     $doneyet = false;
-                    while (mysqli_fetch_assoc($result2)) {
+                    while ($row = mysqli_fetch_assoc($result2)) {
                         if (!$doneyet) {
                             echo "<hr>";
                             if ($day == $today) {
@@ -126,10 +126,10 @@ if (!$blocked) {
                             }
                             $doneyet = true;
                         }
-                        echo "<div class=\"dateBox\"><span class=\"evtName\">" . $result2['name'] . "</span>";
-                        if (!is_null($result2['description'])) {
-                            if ($result2['description'] != "") {
-                                echo "<span class=\"evtDesc\">" . $result2['description'] . "</span>";
+                        echo "<div class=\"dateBox\"><span class=\"evtName\">" . $row['name'] . "</span>";
+                        if (!is_null($row['description'])) {
+                            if ($row['description'] != "") {
+                                echo "<span class=\"evtDesc\">" . $row['description'] . "</span>";
                             }
                         }
                         echo "</div><br>";
