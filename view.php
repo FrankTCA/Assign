@@ -40,14 +40,14 @@ if (!$blocked) {
     $tz = 'America/New_York';
     $tz_obj = new DateTimeZone($tz);
     $theDate = new DateTime("now", $tz_obj);
-    $today = $theDate->format('MM/DD/YY');
+    $today = $theDate->format('m/d/o');
     $tom = new DateTime(strtotime($today . ' + 1 day'));
-    $tomorrow = $tom->format('MM/DD/YY');
+    $tomorrow = $tom->format('m/d/o');
     $dates = Array($today, $tomorrow);
 
     for ($day = 0; $day < 9; $day += 1) {
         $theDay = new DateTime(strtotime($tomorrow . ' + ' . $day . ' days'));
-        $dayText = $theDay->format('MM/DD/YY');
+        $dayText = $theDay->format('m/d/o');
         $dates[] = $dayText;
     }
 }
