@@ -23,7 +23,7 @@ session_start();
     </head>
     <body>
     <?php
-    if (!(isset($_SESSION['assign_user_id']) && isset($_SESSION['assign_user_name']))) {
+    if (!isset($_SESSION['assign_user_id'])) {
     ?>
     <div class="container" id="notallowed">
         <h1 class="center">Access denied.</h1>
