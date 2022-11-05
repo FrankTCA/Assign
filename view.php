@@ -101,6 +101,7 @@ if (!$blocked) {
                 echo "Big problem!";
             } else {
                 echo $username;
+                echo $userid;
             }
             ?></h1>
             <?php
