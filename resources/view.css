@@ -30,8 +30,8 @@ html, body {
     color: black;
     font-family: interstate, Arial, sans-serif;
     border-radius: 12px;
-    padding-top: 10px;
-    padding-left: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
     width: 80%;
     align: left;
 }
@@ -68,7 +68,7 @@ hr {
     color: aliceblue;
     font-size: 2em;
     font-family: interstate, Arial, sans-serif;
-    padding-top: 10px;
+    margin-top: 10px;
     padding-left: 15px;
     padding-bottom: 5px;
     text-transform: uppercase;
