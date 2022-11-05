@@ -38,7 +38,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     if ($creds->is_development()) {
         echo "User account exists: ".$row."<br>";
     }
-    if ($row['approved'] == 0) {
+    if ($row['allowed'] == 0) {
         die("Account has not yet been approved!");
     } else {
         if (!(is_null($row['token']))) {
