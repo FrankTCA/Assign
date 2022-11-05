@@ -53,7 +53,7 @@ session_start();
             <span class="formInfo">Description:</span><input type="text" name="descr" id="descrBox" placeholder="Optional">
             <span class="formInfo">Due Date:   </span><input type="text" name="date" id="dateBox" placeholder="mm/dd/yyyy">
         </form>
-        <button data-callback="onSubmit" class="submitbtn" id="evtSubmitBtn">Create Event</button>
+        <button onclick="onSubmit()" class="submitbtn" id="evtSubmitBtn">Create Event</button>
         <p id="status">You shouldn't see this!</p>
     </div>
     <?php
