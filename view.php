@@ -18,7 +18,7 @@ if (!$blocked) {
         }
     }
 
-    $stmt = $conn->prepare("SELECT * FROM `users` WHERE `token` = ?;");
+    $stmt = $conn->prepare("SELECT * FROM `users` WHERE `token` LIKE ?;");
     $stmt->bind_param("s", $tok);
 
     $tok = $_GET['token'];
