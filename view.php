@@ -97,7 +97,7 @@ if (!$blocked) {
     ?>
         <div class="bg">
             <h1 class="hello">Hello, <?php
-            if (!(isset($username)) || isset($userid)) {
+            if (!(isset($username))) {
                 echo "Big problem!";
             } else {
                 echo $username;
