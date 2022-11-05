@@ -105,7 +105,7 @@ if (!$blocked) {
             ?></h1>
             <?php
                 foreach ($dates as $day) {
-                    $query = $conn->prepare("SELECT * FROM `events` WHERE `user_id` = ? AND `date` LIKE ?;");
+                    $query = $conn->prepare("SELECT * FROM `events` WHERE `user_id` = ? AND `due` LIKE ?;");
                     $query->bind_param("is", $uid, $d);
 
                     $uid = $userid;
