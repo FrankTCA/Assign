@@ -110,8 +110,8 @@ if (!$blocked) {
 
                     $uid = $userid;
                     $d = $day;
-                    $stmt->execute();
-                    $result2 = $stmt->get_result();
+                    $query->execute();
+                    $result2 = $query->get_result();
                     $doneyet = false;
                     while ($row = mysqli_fetch_assoc($result2)) {
                         if (!$doneyet) {
