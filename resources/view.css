@@ -29,7 +29,7 @@ html, body {
     opacity: 0.7;
     color: black;
     font-family: interstate, Arial, sans-serif;
-    border-radius: 6Lepx;
+    border-radius: 6px;
     margin-top: 10px;
     margin-left: 30px;
     width: 70%;
@@ -60,7 +60,7 @@ hr {
     font-size: 0.8em;
     opacity: 1;
     padding-top: 10px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     padding-left: 15px;
 }
 
