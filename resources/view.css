@@ -30,6 +30,10 @@ html, body {
     color: black;
     font-family: interstate, Arial, sans-serif;
     border-radius: 12px;
+    padding-top: 10px;
+    padding-left: 30px;
+    width: 80%;
+    align: left;
 }
 
 hr {
@@ -57,7 +61,7 @@ hr {
     opacity: 1;
     padding-top: 10px;
     padding-bottom: 8px;
-    padding-left: 7px;Loo
+    padding-left: 7px;
 }
 
 .day {
