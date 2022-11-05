@@ -1,0 +1,9 @@
+<FilesMatch LICENSE.txt>
+    require all denied
+</FilesMatch>
+<FilesMatch README.md>
+    require all denied
+</FilesMatch>
+<FilesMatch .gitignore>
+    require all denied
+</FilesMatch>
