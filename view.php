@@ -41,7 +41,7 @@ if (!$blocked) {
     $tz_obj = new DateTimeZone($tz);
     $theDate = new DateTime("now", $tz_obj);
     $today = $theDate->format('m/d/o');
-    $tom = new DateTime('+1 day');
+    $tom = new DateTime($today . ' + 1 day');
     $tomorrow = $tom->format('m/d/o');
     $dates = Array($today, $tomorrow);
 
