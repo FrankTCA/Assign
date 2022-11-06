@@ -45,7 +45,7 @@ if (!$blocked) {
     $tomorrow = $tom->format('m/d/o');
     $dates = Array($today, $tomorrow);
 
-    for ($day = 1; $day < 11; $day += 1) {
+    for ($day = 0; $day < 11; $day += 1) {
         $theDay = new DateTime($tomorrow . '+' . $day . ' days');
         $dayText = $theDay->format('m/d/o');
         $dates[] = $dayText;
