@@ -72,7 +72,7 @@ if (!$blocked) {
         <style>
             .bg {
                 background-image: url("https://imgdrop.infotoast.org/hiresbg/<?php
-            echo rand(0, 342);
+            echo rand(0, 388);
 ?>.jpg");
                 background-size: 100% 100%;
                 width: 100%;
